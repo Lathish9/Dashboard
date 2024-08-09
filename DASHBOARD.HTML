@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Employment Dashboard</h1>
+        </header>
+        <section id="summary-cards">
+            <div class="card">
+                <h2>Total Applications</h2>
+                <p id="total-applications">0</p>
+            </div>
+            <div class="card">
+                <h2>New Hires</h2>
+                <p id="new-hires">0</p>
+            </div>
+            <div class="card">
+                <h2>Turnover Rate</h2>
+                <p id="turnover-rate">0%</p>
+            </div>
+        </section>
+        <section id="charts">
+            <canvas id="applications-chart"></canvas>
+            <canvas id="hires-chart"></canvas>
+        </section>
+        <section id="data-table">
+            <h2>Recent Applications</h2>
+            <table id="applications-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Date Applied</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
